@@ -1,0 +1,473 @@
+@import "tailwindcss";
+
+/* ════════════════════════════════════════════════════════════
+   DESIGN SYSTEM — Tailwind CSS v4 Theme
+   ════════════════════════════════════════════════════════════ */
+@theme inline {
+  /* Colour palette — deep dark + violet-blue accent */
+  --color-bg-primary: #0a0a0f;
+  --color-bg-secondary: #111118;
+  --color-bg-card: #16161f;
+  --color-bg-card-hover: #1c1c28;
+
+  --color-border: rgba(255, 255, 255, 0.06);
+  --color-border-hover: rgba(255, 255, 255, 0.12);
+
+  --color-text-primary: #e8e8ed;
+  --color-text-secondary: #9395a5;
+  --color-text-muted: #5d5f72;
+
+  --color-accent: #7c5cfc;
+  --color-accent-light: #a78bfa;
+  --color-accent-glow: rgba(124, 92, 252, 0.25);
+  --color-accent-subtle: rgba(124, 92, 252, 0.08);
+
+  /* Fonts */
+  --font-sans: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-geist-mono), "Fira Code", monospace;
+}
+
+/* ═══ Base styles ═══ */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+/* ═══ Scroll reveal animation ═══ */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ═══ Cursor blink animation ═══ */
+@keyframes cursor-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ═══ Glow drift animation ═══ */
+@keyframes glow-drift {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  100% {
+    transform: translate(30px, -20px) scale(1.1);
+  }
+}
+
+/* ═══ Scroll pulse animation ═══ */
+@keyframes scroll-pulse {
+
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scaleY(0.6);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+/* ════════════════════════════════════════════════════════════
+   ENHANCED ANIMATIONS
+   ════════════════════════════════════════════════════════════ */
+
+/* ═══ Hero — staggered fade up entrance ═══ */
+@keyframes hero-fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+    filter: blur(8px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.hero-animate>* {
+  opacity: 0;
+  animation: hero-fade-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.hero-animate>*:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.hero-animate>*:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.hero-animate>*:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.hero-animate>*:nth-child(4) {
+  animation-delay: 0.55s;
+}
+
+.hero-animate>*:nth-child(5) {
+  animation-delay: 0.7s;
+}
+
+.hero-animate>*:nth-child(6) {
+  animation-delay: 0.85s;
+}
+
+/* ═══ Hero — name gradient shimmer ═══ */
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient-shift {
+  background-size: 200% 200%;
+  animation: gradient-shift 4s ease-in-out infinite;
+}
+
+/* ═══ Hero — floating particles ═══ */
+@keyframes float-particle {
+
+  0%,
+  100% {
+    transform: translateY(0px) translateX(0px);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(-80px) translateX(20px);
+  }
+}
+
+.particle {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: var(--color-accent-light);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: float-particle linear infinite;
+}
+
+/* ═══ Typewriter effect ═══ */
+@keyframes typewriter-cursor {
+
+  0%,
+  100% {
+    border-color: var(--color-accent);
+  }
+
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* ═══ Skill card — staggered pop ═══ */
+@keyframes skill-pop-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.7) translateY(20px);
+  }
+
+  60% {
+    transform: scale(1.04) translateY(-2px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.skill-card-animate {
+  opacity: 0;
+}
+
+.skill-card-animate.visible {
+  animation: skill-pop-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ═══ Experience — timeline grow ═══ */
+@keyframes timeline-grow {
+  0% {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+
+  100% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+}
+
+.timeline-line {
+  transform: scaleY(0);
+  transform-origin: top;
+}
+
+.timeline-line.visible {
+  animation: timeline-grow 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ═══ Experience — card slide-in ═══ */
+@keyframes slide-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.exp-card-animate {
+  opacity: 0;
+}
+
+.exp-card-animate.visible {
+  animation: slide-in-left 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ═══ Experience — marker pulse ═══ */
+@keyframes marker-pulse {
+
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 var(--color-accent-glow);
+  }
+
+  50% {
+    box-shadow: 0 0 0 8px transparent;
+  }
+}
+
+.timeline-marker {
+  animation: marker-pulse 2.5s ease-in-out infinite;
+}
+
+/* ═══ Project card — entrance ═══ */
+@keyframes project-entrance {
+  0% {
+    opacity: 0;
+    transform: translateY(60px) scale(0.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.project-card-animate {
+  opacity: 0;
+}
+
+.project-card-animate.visible {
+  animation: project-entrance 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ═══ Project card — hover shimmer ═══ */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%) skewX(-15deg);
+  }
+
+  100% {
+    transform: translateX(200%) skewX(-15deg);
+  }
+}
+
+.project-card-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card-shimmer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.03),
+      transparent);
+  transform: translateX(-100%) skewX(-15deg);
+  transition: none;
+  pointer-events: none;
+}
+
+.project-card-shimmer:hover::after {
+  animation: shimmer 0.8s ease-in-out;
+}
+
+/* ═══ CTA button pulse ═══ */
+@keyframes cta-pulse {
+
+  0%,
+  100% {
+    box-shadow: 0 4px 24px var(--color-accent-glow);
+  }
+
+  50% {
+    box-shadow: 0 4px 40px var(--color-accent-glow), 0 0 60px rgba(124, 92, 252, 0.15);
+  }
+}
+
+.cta-pulse {
+  animation: cta-pulse 3s ease-in-out infinite;
+}
+
+/* ═══ Section header — gradient underline grow ═══ */
+@keyframes underline-grow {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.section-underline {
+  transform: scaleX(0);
+  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.visible .section-underline {
+  transform: scaleX(1);
+}
+
+/* ═══ Floating animation for icons ═══ */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* ═══ Stat card — count glow ═══ */
+@keyframes count-glow {
+
+  0%,
+  100% {
+    text-shadow: 0 0 20px transparent;
+  }
+
+  50% {
+    text-shadow: 0 0 30px var(--color-accent-glow);
+  }
+}
+
+.stat-glow {
+  animation: count-glow 3s ease-in-out infinite;
+}
+
+/* ═══ Footer — social icon bounce ═══ */
+@keyframes social-bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.social-icon:hover {
+  animation: social-bounce 0.4s ease;
+}
+
+/* ═══ Navbar logo — subtle pulse ═══ */
+@keyframes logo-glow {
+
+  0%,
+  100% {
+    filter: drop-shadow(0 0 0px transparent);
+  }
+
+  50% {
+    filter: drop-shadow(0 0 8px var(--color-accent-glow));
+  }
+}
+
+.logo-animate:hover {
+  animation: logo-glow 1.5s ease-in-out infinite;
+}
+
+/* ═══ Smooth Tilt Reset ═══ */
+.tilt-reset {
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ═══ Scrollbar ═══ */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-text-muted);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}
