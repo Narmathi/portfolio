@@ -143,11 +143,10 @@ export default function Hero() {
 
         {/* Description */}
         <p className="text-[1.05rem] text-text-secondary max-w-[540px] mx-auto mb-10 leading-relaxed">
-          I craft seamless UIs with React ,Next.js & Codeigniter and engineer
-          robust APIs with Node & CodeIgniter. SEO-friendly, scalable, and
-          high-performance digital solutions. Engineered for growth and
-          <br />
-          long-term success.
+          Building seamless UIs with React, Next.js, and CodeIgniter, while
+          building powerful APIs using Node.js and MVC. Delivering scalable,
+          <br></br>SEO-optimized, and high-performance digital solutions
+          designed for long-term growth.
         </p>
 
         {/* CTAs */}

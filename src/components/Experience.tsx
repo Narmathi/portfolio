@@ -14,11 +14,11 @@ const experiences = [
   {
     role: "E-Commerce Web Developer",
     company: "Appteq Technology Solutions",
-    date: "2024 — 2025",
+    date: "2024 – 2025",
     description:
-      "Developed and maintained e-commerce platforms with features such as product catalogs, shopping carts, payment integration, and order management. Focused on responsive design, performance optimization, and user-friendly customer experiences to improve engagement and conversions.",
+      "Developed and maintained scalable e-commerce platforms featuring product catalogs, shopping carts, payment gateway integration, and order management systems. Focused on responsive design, performance optimization, and delivering seamless user experiences to enhance engagement and conversions.",
     tags: [
-      "Codeigniter",
+      "CodeIgniter",
       "React",
       "Bootstrap",
       "JavaScript",
@@ -27,11 +27,11 @@ const experiences = [
     ],
   },
   {
-    role: "Frontend UI/UX Developer",
+    role: "UI/UX Developer",
     company: "Appteq Technology Solutions",
-    date: "2023 — 2024",
+    date: "2023 –2024",
     description:
-      "Created responsive and visually engaging user interfaces using HTML, CSS, and JavaScript. Worked closely with designers to translate UI/UX concepts into functional web components while ensuring accessibility, cross-browser compatibility, and smooth user interactions.",
+      "Built responsive UI components using HTML, CSS, JavaScript, and CodeIgniter (MVC), ensuring accessibility and seamless user experience across devices.",
     tags: ["HTML", "CSS", "JavaScript", "Codeigniter"],
   },
 ];

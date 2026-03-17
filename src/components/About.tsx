@@ -111,10 +111,7 @@ export default function About() {
               <strong className="text-text-primary font-semibold">
                 Node.js
               </strong>
-              ,{" "}
-              <strong className="text-text-primary font-semibold">
-                Express
-              </strong>
+              , <strong className="text-text-primary font-semibold">MVC</strong>
               , and modern database solutions.
             </p>
 

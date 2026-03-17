@@ -92,6 +92,38 @@ const projects: Project[] = [
     ),
   },
   {
+    title: "Dating Application",
+    label: "Microservices & CRM Integration",
+    description:
+      "Developed a scalable dating application using a microservices architecture, handling user management, subscription plans, payments, and content workflows. Integrated a CRM system to manage user data, plan details, and transactions, along with secure and efficient REST APIs for seamless service communication.",
+    tech: [
+      "Node.js",
+      "Microservices",
+      "REST APIs",
+      "JWT",
+      "CRM Integration",
+      "NextJS",
+      "Prisma ORM",
+      "PostgreSQL",
+    ],
+    github: "#",
+    live: "https://staging.moyomoja.africa/",
+    svgIcon: (
+      <svg
+        viewBox="0 0 80 80"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        className="w-full h-full"
+      >
+        <circle cx="40" cy="30" r="12" />
+        <path d="M20 65c4-12 16-16 20-16s16 4 20 16" />
+        <circle cx="28" cy="28" r="2" fill="currentColor" />
+        <circle cx="52" cy="28" r="2" fill="currentColor" />
+      </svg>
+    ),
+  },
+  {
     title: "Eco-Friendly Areca Leaf Plates Website",
     label: "Featured Project",
     description:
@@ -141,6 +173,28 @@ const projects: Project[] = [
         <line x1="14" y1="24" x2="20" y2="24" opacity="0.5" />
         <line x1="14" y1="30" x2="20" y2="30" opacity="0.3" />
         <line x1="14" y1="36" x2="20" y2="36" opacity="0.3" />
+      </svg>
+    ),
+  },
+  {
+    title: "Animated Static Website",
+    label: "Nature & Wildlife Theme",
+    description:
+      "Designed and developed a responsive static website for a wildlife theme featuring smooth bird flying animations. Focused on engaging UI, performance optimization, and mobile-friendly layouts to deliver an immersive user experience.",
+    tech: ["Codeigniter", "Animations", "Responsive Design"],
+    github: "#",
+    live: "https://wildparrot.appteq.co.in/",
+    svgIcon: (
+      <svg
+        viewBox="0 0 80 80"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        className="w-full h-full"
+      >
+        <path d="M10 40c10-10 20-10 30 0s20 10 30 0" />
+        <path d="M20 30c5-5 10-5 15 0" />
+        <path d="M45 30c5-5 10-5 15 0" />
       </svg>
     ),
   },
@@ -221,6 +275,7 @@ const projects: Project[] = [
       </svg>
     ),
   },
+  
 ];
 
 function ProjectCard({ project, index }: { project: Project; index: number }) {
