@@ -124,7 +124,7 @@ const projects: Project[] = [
     ),
   },
   {
-    title: "Eco-Friendly Areca Leaf Plates Website",
+    title: "Eco-Friendly E-commerce Website",
     label: "Featured Project",
     description:
       "A responsive CodeIgniter 4 website showcasing eco-friendly areca leaf plates and sustainable bio-products. Built with SEO optimization to highlight the brand’s mission of promoting a greener, biodegradable lifestyle.",
@@ -275,7 +275,6 @@ const projects: Project[] = [
       </svg>
     ),
   },
-  
 ];
 
 function ProjectCard({ project, index }: { project: Project; index: number }) {
