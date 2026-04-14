@@ -4,35 +4,36 @@ import { useEffect, useRef, useState } from "react";
 
 const experiences = [
   {
-    role: "Full-Stack Developer",
-    company: "Freelance",
-    date: "2026 — Present",
-    description:
-      "Designing and developing end-to-end web applications using modern technologies such as React, Next.js, and Node.js. Building scalable REST APIs, managing relational databases, and ensuring high performance, security, and maintainability. Collaborating with clients to transform business requirements into reliable digital solutions.",
-    tags: ["React", "Next.js", "Node.js", "PostgreSQL", "TypeScript", "Prisma"],
-  },
-  {
-    role: "E-Commerce Web Developer",
+    role: "Full Stack Developer (Backend-Focused)",
     company: "Appteq Technology Solutions",
-    date: "2024 – 2025",
+    date: "Aug 2023 — Present",
     description:
-      "Developed and maintained scalable e-commerce platforms featuring product catalogs, shopping carts, payment gateway integration, and order management systems. Focused on responsive design, performance optimization, and delivering seamless user experiences to enhance engagement and conversions.",
+      "Designed and developed scalable RESTful APIs using Node.js, Fastify, and TypeScript for a dating application and CRM platform. Implemented secure authentication and authorization using JWT and Casbin (RBAC), and optimized PostgreSQL queries to improve performance. Deployed backend services on AWS EC2 with S3 integration.",
     tags: [
-      "CodeIgniter",
-      "React",
-      "Bootstrap",
-      "JavaScript",
-      "REST APIs",
-      "MySQL",
+      "Node.js",
+      "Fastify",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "JWT",
+      "AWS",
     ],
   },
   {
-    role: "UI/UX Developer",
+    role: "Full Stack Developer",
     company: "Appteq Technology Solutions",
-    date: "2023 –2024",
+    date: "Aug 2023 — Present",
     description:
-      "Built responsive UI components using HTML, CSS, JavaScript, and CodeIgniter (MVC), ensuring accessibility and seamless user experience across devices.",
-    tags: ["HTML", "CSS", "JavaScript", "Codeigniter"],
+      "Built end-to-end applications including e-commerce platforms and a hostel management system with features like dynamic pricing, payment integration, and tenant management. Developed responsive frontends using React and Next.js while maintaining scalable backend architecture.",
+    tags: ["Next.js", "Node.js", "MySQL", "Razorpay", "REST APIs"],
+  },
+  {
+    role: "Web Developer",
+    company: "Appteq Technology Solutions",
+    date: "Feb 2023",
+    description:
+      "Developed responsive web interfaces using HTML, CSS, JavaScript, and CodeIgniter (MVC). Focused on building reusable components and improving user experience across devices.",
+    tags: ["HTML", "CSS", "JavaScript", "CodeIgniter"],
   },
 ];
 function ExpCard({

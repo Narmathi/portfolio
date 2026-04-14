@@ -6,7 +6,7 @@ const stats = [
   { target: 10, label: "Projects Built" },
   { target: 3, label: "Years Experience" },
   { target: 2, label: "E-commerce" },
-  { target: 5, label: "SEO" },
+  { target: 1, label: "Microservices" },
 ];
 
 function AnimatedCounter({
@@ -85,56 +85,35 @@ export default function About() {
               Hi, I&apos;m{" "}
               <strong className="text-text-primary font-semibold">
                 Narmathi
-              </strong>{" "}
-              — a passionate{" "}
-              <strong className="text-text-primary font-semibold">
-                Full-Stack Developer
-              </strong>{" "}
-              with{" "}
-              <strong className="text-text-primary font-semibold">
-                3+ years of experience
-              </strong>{" "}
-              building modern, high-performance web applications that combine
-              clean design with powerful functionality.
+              </strong>
+              , a Backend-focused Full Stack Developer with 3+ years of
+              experience building scalable web applications and RESTful APIs.
             </p>
 
             <p className="text-text-secondary text-[1.02rem] leading-relaxed">
-              I specialize in developing responsive front-end interfaces using{" "}
+              I specialize in{" "}
               <strong className="text-text-primary font-semibold">
-                Codeigniter , React
-              </strong>{" "}
-              and{" "}
-              <strong className="text-text-primary font-semibold">
-                Next.js
+                Node.js, Fastify, Prisma, and PostgreSQL
               </strong>
-              , while also engineering scalable and secure back-end systems with{" "}
-              <strong className="text-text-primary font-semibold">
-                Node.js
-              </strong>
-              , <strong className="text-text-primary font-semibold">MVC</strong>
-              , and modern database solutions.
+              , developing secure and high-performance backend systems including
+              user management, subscription workflows, and CRM applications.
             </p>
 
             <p className="text-text-secondary text-[1.02rem] leading-relaxed">
-              Along with full-stack development, I have practical experience in{" "}
+              I have built real-world products including e-commerce platforms
+              generating
               <strong className="text-text-primary font-semibold">
-                Digital Marketing (SEO)
+                &nbsp; ₹1L+ monthly revenue
               </strong>
-              , helping businesses improve search visibility, attract organic
-              traffic, and grow their online presence.
+              and production-grade APIs for scalable applications.
             </p>
 
             <p className="text-text-secondary text-[1.02rem] leading-relaxed">
-              My focus is on delivering applications that are{" "}
+              My focus is on writing clean, maintainable code and building
               <strong className="text-text-primary font-semibold">
-                fast, scalable, and secure
+                &nbsp; fast, scalable, and secure systems
               </strong>
-              , while maintaining{" "}
-              <strong className="text-text-primary font-semibold">
-                clean, maintainable code
-              </strong>{" "}
-              and building user-centric experiences that support long-term
-              product and business growth.
+              .
             </p>
           </div>
 

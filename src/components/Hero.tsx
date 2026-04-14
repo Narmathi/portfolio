@@ -38,9 +38,9 @@ function FloatingParticles() {
 
 function TypewriterRole() {
   const roles = [
+    "Backend Developer",
     "Full Stack Developer",
-    "Responsive UI/UX Specialist",
-    "Backend API Engineer",
+    "REST API Developer",
   ];
   const [currentRole, setCurrentRole] = useState(0);
   const [displayText, setDisplayText] = useState("");
@@ -130,7 +130,7 @@ export default function Hero() {
 
         {/* Name with gradient shimmer */}
         <h1
-          className="animate-gradient-shift- text-[clamp(3rem,8vw,5.5rem)] font-extrabold tracking-[-2px] leading-[1.05] mb-2 bg-gradient-to-r from-purple-400 via-pink-500 to-indigo-400 bg-clip-text text-transparent"
+          className="animate-gradient-shift- text-[clamp(3rem,8vw,5.5rem)] font-extrabold tracking-[-2px] leading-[1.05] mb-2 bg-gradient-to-r from-purple-400 via-violet-500 to-indigo-400 bg-clip-text text-transparent"
           style={{ backgroundSize: "200% 200%" }}
         >
           Narmathi GP
@@ -143,10 +143,10 @@ export default function Hero() {
 
         {/* Description */}
         <p className="text-[1.05rem] text-text-secondary max-w-[540px] mx-auto mb-10 leading-relaxed">
-          Building seamless UIs with React, Next.js, and CodeIgniter, while
-          building powerful APIs using Node.js and MVC. Delivering scalable,
-          <br></br>SEO-optimized, and high-performance digital solutions
-          designed for long-term growth.
+          Backend-focused Full Stack Developer with expertise in Node.js,
+          Prisma, and PostgreSQL, building scalable and production-ready APIs.
+          Experienced in developing real-world applications including e-commerce
+          platforms and subscription-based systems.
         </p>
 
         {/* CTAs */}

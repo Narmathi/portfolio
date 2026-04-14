@@ -34,6 +34,20 @@ const databaseSkills = [
   { name: "PostgreSQL", icon: "devicon-postgresql-plain colored" },
 ];
 
+const cloudSkills = [
+  { name: "Docker", icon: "devicon-docker-plain colored" },
+
+  { name: "AWS (EC2 , S3)", icon: "devicon-amazonwebservices-plain colored" },
+  { name: "GCP (Basics)", icon: "devicon-googlecloud-plain colored" },
+];
+
+const toolsSkills = [
+  { name: "Git", icon: "devicon-git-plain colored" },
+  { name: "GitHub", icon: "custom-github" },
+  { name: "Postman", icon: "devicon-postman-plain colored" },
+  // { name: "Bitbucket", icon: "devicon-bitbucket-original colored" },
+];
+
 interface SkillItem {
   name: string;
   icon: string | null;
@@ -171,6 +185,18 @@ export default function Skills() {
             icon="🗄️"
             title="Database"
             skills={databaseSkills}
+            baseDelay={0}
+          />
+          <CategoryBlock
+            icon="☁️"
+            title="DevOps & Cloud"
+            skills={cloudSkills}
+            baseDelay={0}
+          />
+          <CategoryBlock
+            icon="🛠️"
+            title="Tools & Workflow"
+            skills={toolsSkills}
             baseDelay={0}
           />
         </div>

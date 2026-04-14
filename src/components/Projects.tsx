@@ -35,63 +35,6 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "E-Commerce Platform",
-    label: "Bike Essentials & Accessories",
-    description:
-      "E-commerce platform for bike accessories built with CI4, featuring OTP login via 2Factor and Razorpay payments.Supports product filters, cart checkout, and inventory management.Fast, secure, and optimized for real-world store operations.",
-    tech: ["Codeigniter 4", "2 Factor", "Razorpay", "Admin Control"],
-    github: "#",
-    live: "https://adventureshoppe.com/",
-    svgIcon: (
-      <svg
-        viewBox="0 0 80 80"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        className="w-full h-full"
-      >
-        <rect x="8" y="8" width="64" height="48" rx="4" />
-        <line x1="8" y1="20" x2="72" y2="20" />
-        <circle cx="16" cy="14" r="2" fill="currentColor" />
-        <circle cx="22" cy="14" r="2" fill="currentColor" />
-        <circle cx="28" cy="14" r="2" fill="currentColor" />
-        <rect x="16" y="28" width="20" height="4" rx="1" opacity="0.5" />
-        <rect x="16" y="36" width="40" height="4" rx="1" opacity="0.3" />
-        <rect x="16" y="44" width="30" height="4" rx="1" opacity="0.3" />
-        <rect x="20" y="64" width="40" height="8" rx="4" />
-      </svg>
-    ),
-  },
-  {
-    title: "E-Commerce",
-    label: "Eco-Friendly Products",
-    description:
-      "Built using CodeIgniter 4, this fully featured e-commerce project includes a robust admin panel, 2Factor SMS authentication, JWT-secured APIs, and Razorpay payment gateway integration.It also supports flat discounts for new customers, automated order handling, and a seamless shopping experience.",
-    tech: ["Codeigniter 4", "2 Factor", "Razorpay", "Admin Control"],
-    github: "#",
-    live: "https://smileaf.in/",
-    svgIcon: (
-      <svg
-        viewBox="0 0 80 80"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        className="w-full h-full"
-      >
-        <rect x="8" y="12" width="64" height="56" rx="4" />
-        <rect x="8" y="12" width="18" height="56" rx="4" />
-        <line x1="32" y1="24" x2="64" y2="24" opacity="0.5" />
-        <rect x="32" y="30" width="14" height="14" rx="2" opacity="0.3" />
-        <rect x="50" y="30" width="14" height="14" rx="2" opacity="0.3" />
-        <rect x="32" y="48" width="14" height="14" rx="2" opacity="0.3" />
-        <rect x="50" y="48" width="14" height="14" rx="2" opacity="0.3" />
-        <line x1="14" y1="24" x2="20" y2="24" opacity="0.5" />
-        <line x1="14" y1="30" x2="20" y2="30" opacity="0.3" />
-        <line x1="14" y1="36" x2="20" y2="36" opacity="0.3" />
-      </svg>
-    ),
-  },
-  {
     title: "Dating Application",
     label: "Microservices & CRM Integration",
     description:
@@ -124,13 +67,13 @@ const projects: Project[] = [
     ),
   },
   {
-    title: "Eco-Friendly E-commerce Website",
+    title: "Hostel Management System",
     label: "Featured Project",
     description:
-      "A responsive CodeIgniter 4 website showcasing eco-friendly areca leaf plates and sustainable bio-products. Built with SEO optimization to highlight the brand’s mission of promoting a greener, biodegradable lifestyle.",
-    tech: ["CodeIgniter 4", "Responsive Design", "SEO Optimization"],
-    github: "#",
-    live: "https://cactusintl.com/",
+      "A full-stack web application to efficiently manage multiple hostels. It handles hostel details like floors, rooms, and beds, while providing automated rent calculations and secure tenant management with JWT-based authentication.",
+    tech: ["React", "MUI", "NodeJS", "JWT", "MySQL"],
+    github: "https://github.com/Narmathi/Hostel_Management",
+    live: "#",
     svgIcon: (
       <svg
         viewBox="0 0 80 80"
@@ -147,6 +90,64 @@ const projects: Project[] = [
       </svg>
     ),
   },
+  {
+    title: "E-Commerce Platform",
+    label: "Bike Essentials & Accessories",
+    description:
+      "E-commerce platform for bike accessories built with CI4, featuring OTP login via 2Factor and Razorpay payments.Supports product filters, cart checkout, and inventory management.Fast, secure, and optimized for real-world store operations.",
+    tech: ["MVC", "2 Factor", "Razorpay", "Admin Control"],
+    github: "https://github.com/Narmathii/adv_live",
+    live: "https://adventureshoppe.com/",
+    svgIcon: (
+      <svg
+        viewBox="0 0 80 80"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        className="w-full h-full"
+      >
+        <rect x="8" y="8" width="64" height="48" rx="4" />
+        <line x1="8" y1="20" x2="72" y2="20" />
+        <circle cx="16" cy="14" r="2" fill="currentColor" />
+        <circle cx="22" cy="14" r="2" fill="currentColor" />
+        <circle cx="28" cy="14" r="2" fill="currentColor" />
+        <rect x="16" y="28" width="20" height="4" rx="1" opacity="0.5" />
+        <rect x="16" y="36" width="40" height="4" rx="1" opacity="0.3" />
+        <rect x="16" y="44" width="30" height="4" rx="1" opacity="0.3" />
+        <rect x="20" y="64" width="40" height="8" rx="4" />
+      </svg>
+    ),
+  },
+  {
+    title: "E-Commerce",
+    label: "Eco-Friendly Products",
+    description:
+      "Built using CodeIgniter 4, this fully featured e-commerce project includes a robust admin panel, 2Factor SMS authentication, JWT-secured APIs, and Razorpay payment gateway integration.It also supports flat discounts for new customers, automated order handling, and a seamless shopping experience.",
+    tech: ["MVC", "2 Factor", "Razorpay", "Admin Control"],
+    github: "#",
+    live: "https://smileaf.in/",
+    svgIcon: (
+      <svg
+        viewBox="0 0 80 80"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        className="w-full h-full"
+      >
+        <rect x="8" y="12" width="64" height="56" rx="4" />
+        <rect x="8" y="12" width="18" height="56" rx="4" />
+        <line x1="32" y1="24" x2="64" y2="24" opacity="0.5" />
+        <rect x="32" y="30" width="14" height="14" rx="2" opacity="0.3" />
+        <rect x="50" y="30" width="14" height="14" rx="2" opacity="0.3" />
+        <rect x="32" y="48" width="14" height="14" rx="2" opacity="0.3" />
+        <rect x="50" y="48" width="14" height="14" rx="2" opacity="0.3" />
+        <line x1="14" y1="24" x2="20" y2="24" opacity="0.5" />
+        <line x1="14" y1="30" x2="20" y2="30" opacity="0.3" />
+        <line x1="14" y1="36" x2="20" y2="36" opacity="0.3" />
+      </svg>
+    ),
+  },
+
   {
     title: "Tours & Travels Platform",
     label: "Travels Platform",
@@ -176,105 +177,82 @@ const projects: Project[] = [
       </svg>
     ),
   },
-  {
-    title: "Animated Static Website",
-    label: "Nature & Wildlife Theme",
-    description:
-      "Designed and developed a responsive static website for a wildlife theme featuring smooth bird flying animations. Focused on engaging UI, performance optimization, and mobile-friendly layouts to deliver an immersive user experience.",
-    tech: ["Codeigniter", "Animations", "Responsive Design"],
-    github: "#",
-    live: "https://wildparrot.appteq.co.in/",
-    svgIcon: (
-      <svg
-        viewBox="0 0 80 80"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        className="w-full h-full"
-      >
-        <path d="M10 40c10-10 20-10 30 0s20 10 30 0" />
-        <path d="M20 30c5-5 10-5 15 0" />
-        <path d="M45 30c5-5 10-5 15 0" />
-      </svg>
-    ),
-  },
-  {
-    title: "Hostel Management System",
-    label: "Featured Project",
-    description:
-      "A full-stack web application to efficiently manage multiple hostels. It handles hostel details like floors, rooms, and beds, while providing automated rent calculations and secure tenant management with JWT-based authentication.",
-    tech: ["React", "MUI", "NodeJS", "JWT", "MySQL"],
-    github: "https://github.com/Narmathi/Hostel_Management",
-    live: "#",
-    svgIcon: (
-      <svg
-        viewBox="0 0 80 80"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        className="w-full h-full"
-      >
-        <rect x="8" y="8" width="64" height="48" rx="4" />
-        <path d="M8 20 L40 42 L72 20" opacity="0.3" />
-        <line x1="8" y1="20" x2="72" y2="20" />
-        <rect x="20" y="64" width="16" height="8" rx="3" opacity="0.5" />
-        <rect x="44" y="64" width="16" height="8" rx="3" opacity="0.5" />
-      </svg>
-    ),
-  },
-  {
-    title: "Landscape Architecture Platform",
-    label: "Landscape Architecture",
-    description:
-      "Dynamic website for a leading US landscape architecture firm, featuring admin-controlled pages, service management, and modern responsive UI built with CI4, Bootstrap, and MySQL.",
-    tech: ["CI4", "Bootstrap", "MySQL", "Admin Panel"],
-    github: "#",
-    live: "https://louiscontinolandscaping.com/",
-    svgIcon: (
-      <svg
-        viewBox="0 0 80 80"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        className="w-full h-full"
-      >
-        <rect x="8" y="12" width="64" height="56" rx="4" />
-        <rect x="8" y="12" width="18" height="56" rx="4" />
-        <line x1="32" y1="24" x2="64" y2="24" opacity="0.5" />
-        <rect x="32" y="30" width="14" height="14" rx="2" opacity="0.3" />
-        <rect x="50" y="30" width="14" height="14" rx="2" opacity="0.3" />
-        <rect x="32" y="48" width="14" height="14" rx="2" opacity="0.3" />
-        <rect x="50" y="48" width="14" height="14" rx="2" opacity="0.3" />
-        <line x1="14" y1="24" x2="20" y2="24" opacity="0.5" />
-        <line x1="14" y1="30" x2="20" y2="30" opacity="0.3" />
-        <line x1="14" y1="36" x2="20" y2="36" opacity="0.3" />
-      </svg>
-    ),
-  },
-  {
-    title: "Turf Construction Company – Sports Turf Solutions",
-    label: "Featured Project",
-    description:
-      "Static website for a professional turf construction company offering installation, maintenance, and customization of sports turfs. Built with responsive Bootstrap UI and SEO-optimized pages for better reach.",
-    tech: ["CI4", "SEO"],
-    github: "https://www.srsportscorp.com/",
-    live: "#",
-    svgIcon: (
-      <svg
-        viewBox="0 0 80 80"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        className="w-full h-full"
-      >
-        <rect x="8" y="8" width="64" height="48" rx="4" />
-        <path d="M8 20 L40 42 L72 20" opacity="0.3" />
-        <line x1="8" y1="20" x2="72" y2="20" />
-        <rect x="20" y="64" width="16" height="8" rx="3" opacity="0.5" />
-        <rect x="44" y="64" width="16" height="8" rx="3" opacity="0.5" />
-      </svg>
-    ),
-  },
+  // {
+  //   title: "Animated Static Website",
+  //   label: "Nature & Wildlife Theme",
+  //   description:
+  //     "Designed and developed a responsive static website for a wildlife theme featuring smooth bird flying animations. Focused on engaging UI, performance optimization, and mobile-friendly layouts to deliver an immersive user experience.",
+  //   tech: ["Codeigniter", "Animations", "Responsive Design"],
+  //   github: "#",
+  //   live: "https://wildparrot.appteq.co.in/",
+  //   svgIcon: (
+  //     <svg
+  //       viewBox="0 0 80 80"
+  //       fill="none"
+  //       stroke="currentColor"
+  //       strokeWidth="1.5"
+  //       className="w-full h-full"
+  //     >
+  //       <path d="M10 40c10-10 20-10 30 0s20 10 30 0" />
+  //       <path d="M20 30c5-5 10-5 15 0" />
+  //       <path d="M45 30c5-5 10-5 15 0" />
+  //     </svg>
+  //   ),
+  // },
+
+  // {
+  //   title: "Landscape Architecture Platform",
+  //   label: "Landscape Architecture",
+  //   description:
+  //     "Dynamic website for a leading US landscape architecture firm, featuring admin-controlled pages, service management, and modern responsive UI built with CI4, Bootstrap, and MySQL.",
+  //   tech: ["CI4", "Bootstrap", "MySQL", "Admin Panel"],
+  //   github: "#",
+  //   live: "https://louiscontinolandscaping.com/",
+  //   svgIcon: (
+  //     <svg
+  //       viewBox="0 0 80 80"
+  //       fill="none"
+  //       stroke="currentColor"
+  //       strokeWidth="1.5"
+  //       className="w-full h-full"
+  //     >
+  //       <rect x="8" y="12" width="64" height="56" rx="4" />
+  //       <rect x="8" y="12" width="18" height="56" rx="4" />
+  //       <line x1="32" y1="24" x2="64" y2="24" opacity="0.5" />
+  //       <rect x="32" y="30" width="14" height="14" rx="2" opacity="0.3" />
+  //       <rect x="50" y="30" width="14" height="14" rx="2" opacity="0.3" />
+  //       <rect x="32" y="48" width="14" height="14" rx="2" opacity="0.3" />
+  //       <rect x="50" y="48" width="14" height="14" rx="2" opacity="0.3" />
+  //       <line x1="14" y1="24" x2="20" y2="24" opacity="0.5" />
+  //       <line x1="14" y1="30" x2="20" y2="30" opacity="0.3" />
+  //       <line x1="14" y1="36" x2="20" y2="36" opacity="0.3" />
+  //     </svg>
+  //   ),
+  // },
+  // {
+  //   title: "Turf Construction Company – Sports Turf Solutions",
+  //   label: "Featured Project",
+  //   description:
+  //     "Static website for a professional turf construction company offering installation, maintenance, and customization of sports turfs. Built with responsive Bootstrap UI and SEO-optimized pages for better reach.",
+  //   tech: ["CI4", "SEO"],
+  //   github: "https://www.srsportscorp.com/",
+  //   live: "#",
+  //   svgIcon: (
+  //     <svg
+  //       viewBox="0 0 80 80"
+  //       fill="none"
+  //       stroke="currentColor"
+  //       strokeWidth="1.5"
+  //       className="w-full h-full"
+  //     >
+  //       <rect x="8" y="8" width="64" height="48" rx="4" />
+  //       <path d="M8 20 L40 42 L72 20" opacity="0.3" />
+  //       <line x1="8" y1="20" x2="72" y2="20" />
+  //       <rect x="20" y="64" width="16" height="8" rx="3" opacity="0.5" />
+  //       <rect x="44" y="64" width="16" height="8" rx="3" opacity="0.5" />
+  //     </svg>
+  //   ),
+  // },
 ];
 
 function ProjectCard({ project, index }: { project: Project; index: number }) {
@@ -323,21 +301,28 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             {project.label}
           </span>
           <div className="flex gap-2">
-            <a
-              href={project.github}
-              className="text-text-muted hover:text-accent-light hover:bg-accent-subtle p-1.5 rounded-lg transition-all duration-200 hover:-translate-y-0.5"
-              aria-label="View source on GitHub"
-            >
-              <GitHubIcon />
-            </a>
-            <a
-              href={project.live}
-              target="_blank"
-              className="text-text-muted hover:text-accent-light hover:bg-accent-subtle p-1.5 rounded-lg transition-all duration-200 hover:-translate-y-0.5"
-              aria-label="View live demo"
-            >
-              <ExternalIcon />
-            </a>
+            {project.github && project.github !== "#" && (
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-text-muted hover:text-accent-light hover:bg-accent-subtle p-1.5 rounded-lg transition-all duration-200 hover:-translate-y-0.5"
+                aria-label="View source on GitHub"
+              >
+                <GitHubIcon />
+              </a>
+            )}
+
+            {project.live && project.live !== "#" && (
+              <a
+                href={project.live}
+                target="_blank"
+                className="text-text-muted hover:text-accent-light hover:bg-accent-subtle p-1.5 rounded-lg transition-all duration-200 hover:-translate-y-0.5"
+                aria-label="View live demo"
+              >
+                <ExternalIcon />
+              </a>
+            )}
           </div>
         </div>
 
