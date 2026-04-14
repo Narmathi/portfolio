@@ -81,7 +81,7 @@ export default function Footer() {
 
             {/* LinkedIn */}
             <a
-              href="linkedin.com/in/narmathi-gp-a888b31b1"
+              href="https://www.linkedin.com/in/narmathi-gp/"
               target="_blank"
               rel="noopener noreferrer"
               id="linkedinLink"
