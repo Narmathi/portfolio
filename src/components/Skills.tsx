@@ -1,20 +1,23 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { FaExchangeAlt, FaMobileAlt, FaTachometerAlt } from "react-icons/fa";
 
 const frontendSkills = [
   { name: "HTML5", icon: "devicon-html5-plain colored" },
   { name: "CSS3", icon: "devicon-css3-plain colored" },
   { name: "JavaScript", icon: "devicon-javascript-plain colored" },
   { name: "TypeScript", icon: "devicon-typescript-plain colored" },
-  { name: "CodeIgniter", icon: "devicon-codeigniter-plain colored" },
   { name: "React", icon: "devicon-react-original colored" },
   { name: "Next.js", icon: "devicon-nextjs-plain" },
+  { name: "REST API Integration", icon: <FaExchangeAlt /> },
+  { name: "Responsive Design", icon: <FaMobileAlt /> },
+  { name: "Performance Optimization", icon: <FaTachometerAlt /> },
 ];
 
 const backendSkills = [
   { name: "Node.js", icon: "devicon-nodejs-plain colored" },
-  { name: "Express", icon: "devicon-express-original" },
+
   {
     name: "Fastify",
     icon: null,
@@ -43,7 +46,7 @@ const cloudSkills = [
 
 const toolsSkills = [
   { name: "Git", icon: "devicon-git-plain colored" },
-  { name: "GitHub", icon: "custom-github" },
+  { name: "GitHub", icon: "devicon-github-original" },
   { name: "Postman", icon: "devicon-postman-plain colored" },
   // { name: "Bitbucket", icon: "devicon-bitbucket-original colored" },
 ];

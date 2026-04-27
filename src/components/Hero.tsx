@@ -38,9 +38,9 @@ function FloatingParticles() {
 
 function TypewriterRole() {
   const roles = [
-    "Backend Developer",
-    "Full Stack Developer",
-    "REST API Developer",
+    "Frontend Developer",
+    "React.js Developer",
+    "MERN Stack Developer",
   ];
   const [currentRole, setCurrentRole] = useState(0);
   const [displayText, setDisplayText] = useState("");
@@ -143,10 +143,12 @@ export default function Hero() {
 
         {/* Description */}
         <p className="text-[1.05rem] text-text-secondary max-w-[540px] mx-auto mb-10 leading-relaxed">
-          Backend-focused Full Stack Developer with expertise in Node.js,
-          Prisma, and PostgreSQL, building scalable and production-ready APIs.
-          Experienced in developing real-world applications including e-commerce
-          platforms and subscription-based systems.
+          Frontend-focused Full Stack Developer specializing in React.js and
+          JavaScript, building responsive and scalable web applications.
+          Experienced in integrating REST APIs and developing real-world
+          applications including e-commerce platforms. Strong understanding of
+          backend technologies like Node.js, Prisma, and PostgreSQL to support
+          end-to-end development.
         </p>
 
         {/* CTAs */}

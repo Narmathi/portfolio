@@ -86,32 +86,38 @@ export default function About() {
               <strong className="text-text-primary font-semibold">
                 Narmathi
               </strong>
-              , a Backend-focused Full Stack Developer with 3+ years of
-              experience building scalable web applications and RESTful APIs.
+              , a Frontend-focused Developer with 3+ years of experience
+              building responsive and scalable web applications.
             </p>
 
             <p className="text-text-secondary text-[1.02rem] leading-relaxed">
               I specialize in{" "}
               <strong className="text-text-primary font-semibold">
+                React.js and JavaScript
+              </strong>
+              , creating user-friendly interfaces and integrating REST APIs to
+              deliver seamless user experiences.
+            </p>
+
+            <p className="text-text-secondary text-[1.02rem] leading-relaxed">
+              I have developed real-world applications including e-commerce
+              platforms and interactive web solutions with strong focus on
+              usability and performance.
+            </p>
+
+            <p className="text-text-secondary text-[1.02rem] leading-relaxed">
+              I also have experience working with{" "}
+              <strong className="text-text-primary font-semibold">
                 Node.js, Fastify, Prisma, and PostgreSQL
               </strong>
-              , developing secure and high-performance backend systems including
-              user management, subscription workflows, and CRM applications.
+              , which helps me understand backend systems and build efficient
+              frontend integrations.
             </p>
 
             <p className="text-text-secondary text-[1.02rem] leading-relaxed">
-              I have built real-world products including e-commerce platforms
-              generating
+              My focus is on writing clean, maintainable code and building{" "}
               <strong className="text-text-primary font-semibold">
-                &nbsp; ₹1L+ monthly revenue
-              </strong>
-              and production-grade APIs for scalable applications.
-            </p>
-
-            <p className="text-text-secondary text-[1.02rem] leading-relaxed">
-              My focus is on writing clean, maintainable code and building
-              <strong className="text-text-primary font-semibold">
-                &nbsp; fast, scalable, and secure systems
+                fast, scalable, and user-friendly applications
               </strong>
               .
             </p>

@@ -30,27 +30,27 @@ interface Project {
   tech: string[];
   github: string;
   live: string;
-  svgIcon: React.ReactNode;
+  svgIcon?: React.ReactNode;
+  image?: string;
 }
 
 const projects: Project[] = [
   {
     title: "Dating Application",
-    label: "Microservices & CRM Integration",
+    label: "Next.js Frontend & API Integration",
     description:
-      "Developed a scalable dating application using a microservices architecture, handling user management, subscription plans, payments, and content workflows. Integrated a CRM system to manage user data, plan details, and transactions, along with secure and efficient REST APIs for seamless service communication.",
+      "Developed a responsive and interactive dating application using Next.js and TypeScript. Implemented user-facing features including profile management, subscription plans, and content workflows with seamless REST API integration. Collaborated with backend services for authentication, payments, and data handling, ensuring a scalable and high-performance user experience across devices.",
     tech: [
-      "Node.js",
-      "Microservices",
+      "Next.js",
+      "TypeScript",
       "REST APIs",
       "JWT",
-      "CRM Integration",
-      "NextJS",
-      "Prisma ORM",
+      "Node.js",
+      "Prisma",
       "PostgreSQL",
     ],
-    github: "#",
-    live: "https://staging.moyomoja.africa/",
+    github: "https://github.com/Narmathi/dating-application/tree/master",
+    live: "#",
     svgIcon: (
       <svg
         viewBox="0 0 80 80"
@@ -65,13 +65,14 @@ const projects: Project[] = [
         <circle cx="52" cy="28" r="2" fill="currentColor" />
       </svg>
     ),
+    image: "/projects/dating-app.jpeg",
   },
   {
     title: "Hostel Management System",
     label: "Featured Project",
     description:
-      "A full-stack web application to efficiently manage multiple hostels. It handles hostel details like floors, rooms, and beds, while providing automated rent calculations and secure tenant management with JWT-based authentication.",
-    tech: ["React", "MUI", "NodeJS", "JWT", "MySQL"],
+      "Developed a responsive hostel management web application using React, enabling efficient management of hostels, floors, rooms, and bed allocations. Built user interfaces for tenant management, room allocation, and rent calculation with dynamic pricing logic. Integrated REST APIs for real-time data handling and implemented JWT-based authentication for secure access. Focused on delivering a clean UI and smooth user experience across devices.",
+    tech: ["React.js", "Material UI", "Node.js", "MySQL", "JWT", "REST APIs"],
     github: "https://github.com/Narmathi/Hostel_Management",
     live: "#",
     svgIcon: (
@@ -89,15 +90,28 @@ const projects: Project[] = [
         <rect x="44" y="64" width="16" height="8" rx="3" opacity="0.5" />
       </svg>
     ),
+    image: "/projects/hostel.png",
   },
   {
     title: "E-Commerce Platform",
-    label: "Bike Essentials & Accessories",
+    label: "Bike Accessories Web Application",
     description:
-      "E-commerce platform for bike accessories built with CI4, featuring OTP login via 2Factor and Razorpay payments.Supports product filters, cart checkout, and inventory management.Fast, secure, and optimized for real-world store operations.",
-    tech: ["MVC", "2 Factor", "Razorpay", "Admin Control"],
+      "Developed a full-featured e-commerce platform for bike accessories using CodeIgniter 4, supporting real-world store operations. Built user-facing features such as product listing, advanced filtering, cart management, and checkout flow with Razorpay payment integration. Implemented OTP-based authentication using 2Factor for secure login. Designed admin functionalities for product and inventory management, ensuring efficient store handling and smooth user experience.",
+    tech: [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "CodeIgniter 4",
+      "PHP",
+      "MySQL",
+      "Razorpay",
+      "REST APIs",
+      "OTP Authentication",
+    ],
     github: "https://github.com/Narmathii/adv_live",
     live: "https://adventureshoppe.com/",
+    image: "/projects/bike-accessories.png",
+
     svgIcon: (
       <svg
         viewBox="0 0 80 80"
@@ -119,11 +133,21 @@ const projects: Project[] = [
     ),
   },
   {
-    title: "E-Commerce",
-    label: "Eco-Friendly Products",
+    title: "E-Commerce Platform",
+    label: "Eco-Friendly Products Web Application",
     description:
-      "Built using CodeIgniter 4, this fully featured e-commerce project includes a robust admin panel, 2Factor SMS authentication, JWT-secured APIs, and Razorpay payment gateway integration.It also supports flat discounts for new customers, automated order handling, and a seamless shopping experience.",
-    tech: ["MVC", "2 Factor", "Razorpay", "Admin Control"],
+      "Developed a full-featured e-commerce platform for eco-friendly products using CodeIgniter 4, supporting real-world shopping workflows. Built user-facing features such as product listing, filtering, cart management, and checkout with Razorpay payment integration. Implemented secure OTP-based authentication using 2Factor and JWT-based APIs for seamless communication. Designed an admin panel for product, order, and inventory management, ensuring efficient store operations and smooth user experience.",
+    tech: [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "CodeIgniter 4",
+      "PHP",
+      "MySQL",
+      "Razorpay",
+      "REST APIs",
+      "OTP Authentication",
+    ],
     github: "#",
     live: "https://smileaf.in/",
     svgIcon: (
@@ -146,16 +170,27 @@ const projects: Project[] = [
         <line x1="14" y1="36" x2="20" y2="36" opacity="0.3" />
       </svg>
     ),
+    image: "/projects/eco-friendly.png",
   },
 
   {
     title: "Tours & Travels Platform",
-    label: "Travels Platform",
+    label: "Travel Booking Web Application",
     description:
-      "Dynamic tours and travel website where admins can create, update, and manage tour packages, destinations, pricing, and itinerary details through a secure dashboard.",
-    tech: ["Ci4", "REST API", "MySQL", "Admin Panel"],
+      "Developed a dynamic tours and travel web application for browsing and managing travel packages. Built user-facing features such as package listing, destination details, pricing, and itinerary views with a responsive interface. Implemented an admin dashboard to manage tour packages, destinations, and pricing. Integrated REST APIs for real-time data handling and ensured a smooth and user-friendly experience across devices.",
+    tech: [
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "CodeIgniter 4",
+      "PHP",
+      "MySQL",
+      "REST APIs",
+      "Admin Panel",
+    ],
     github: "#",
     live: "https://santhoshholidays.com/",
+    image: "/projects/tours-travels.png",
     svgIcon: (
       <svg
         viewBox="0 0 80 80"
@@ -287,8 +322,22 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           isEven ? "md:[direction:ltr]" : ""
         }`}
       >
-        <div className="w-[120px] h-[120px] text-text-muted opacity-50 hover:opacity-80 hover:text-accent-light hover:scale-110 transition-all duration-500">
-          {project.svgIcon}
+        <div
+          className={`bg-gradient-to-br from-bg-secondary to-bg-card-hover flex items-center justify-center min-h-[200px] md:min-h-[260px] overflow-hidden ${
+            isEven ? "md:[direction:ltr]" : ""
+          }`}
+        >
+          {project.image ? (
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+            />
+          ) : (
+            <div className="w-[120px] h-[120px] text-text-muted opacity-50">
+              {project.svgIcon}
+            </div>
+          )}
         </div>
       </div>
 

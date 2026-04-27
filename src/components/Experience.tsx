@@ -4,36 +4,28 @@ import { useEffect, useRef, useState } from "react";
 
 const experiences = [
   {
-    role: "Full Stack Developer (Backend-Focused)",
-    company: "Appteq Technology Solutions",
-    date: "Aug 2023 — Present",
-    description:
-      "Designed and developed scalable RESTful APIs using Node.js, Fastify, and TypeScript for a dating application and CRM platform. Implemented secure authentication and authorization using JWT and Casbin (RBAC), and optimized PostgreSQL queries to improve performance. Deployed backend services on AWS EC2 with S3 integration.",
-    tags: [
-      "Node.js",
-      "Fastify",
-      "TypeScript",
-      "Prisma",
-      "PostgreSQL",
-      "JWT",
-      "AWS",
-    ],
-  },
-  {
     role: "Full Stack Developer",
     company: "Appteq Technology Solutions",
     date: "Aug 2023 — Present",
     description:
-      "Built end-to-end applications including e-commerce platforms and a hostel management system with features like dynamic pricing, payment integration, and tenant management. Developed responsive frontends using React and Next.js while maintaining scalable backend architecture.",
-    tags: ["Next.js", "Node.js", "MySQL", "Razorpay", "REST APIs"],
+      "Frontend-focused Full Stack Developer building responsive and scalable web applications using React.js and Next.js. Developed real-world applications including e-commerce platforms and hostel management systems with features like product listing, cart, checkout, and dynamic pricing. Integrated REST APIs and ensured smooth user experience. Built backend APIs using Node.js and Fastify, and optimized PostgreSQL queries to improve performance.",
+    tags: [
+      "React.js",
+      "Next.js",
+      "JavaScript",
+      "Node.js",
+      "PostgreSQL",
+      "REST APIs",
+      "Prisma ORM",
+    ],
   },
   {
-    role: "Web Developer",
+    role: "UI/UX Developer",
     company: "Appteq Technology Solutions",
-    date: "Feb 2023",
+    date: "Feb 2022 — Jul 2023",
     description:
-      "Developed responsive web interfaces using HTML, CSS, JavaScript, and CodeIgniter (MVC). Focused on building reusable components and improving user experience across devices.",
-    tags: ["HTML", "CSS", "JavaScript", "CodeIgniter"],
+      "Developed responsive web interfaces using HTML, CSS, JavaScript Focused on improving user experience, creating reusable UI components, and ensuring cross-device compatibility. Collaborated on frontend features and optimized UI performance.",
+    tags: ["HTML", "CSS", "JavaScript", "Responsive Design"],
   },
 ];
 function ExpCard({
