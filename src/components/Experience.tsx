@@ -22,7 +22,7 @@ const experiences = [
   {
     role: "UI/UX Developer",
     company: "Appteq Technology Solutions",
-    date: "Feb 2022 — Jul 2023",
+    date: "Feb 2023 — Feb 2024",
     description:
       "Developed responsive web interfaces using HTML, CSS, JavaScript Focused on improving user experience, creating reusable UI components, and ensuring cross-device compatibility. Collaborated on frontend features and optimized UI performance.",
     tags: ["HTML", "CSS", "JavaScript", "Responsive Design"],
