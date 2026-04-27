@@ -6,7 +6,7 @@ const experiences = [
   {
     role: "Full Stack Developer",
     company: "Appteq Technology Solutions",
-    date: "Aug 2023 — Present",
+    date: "Mar 2024 — Present",
     description:
       "Frontend-focused Full Stack Developer building responsive and scalable web applications using React.js and Next.js. Developed real-world applications including e-commerce platforms and hostel management systems with features like product listing, cart, checkout, and dynamic pricing. Integrated REST APIs and ensured smooth user experience. Built backend APIs using Node.js and Fastify, and optimized PostgreSQL queries to improve performance.",
     tags: [
