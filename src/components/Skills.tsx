@@ -53,7 +53,7 @@ const toolsSkills = [
 
 interface SkillItem {
   name: string;
-  icon: string | null;
+  icon: string | React.ReactNode;
   svgPath?: string;
 }
 
