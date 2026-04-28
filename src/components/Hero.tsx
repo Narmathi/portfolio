@@ -40,7 +40,7 @@ function TypewriterRole() {
   const roles = [
     "Frontend Developer",
     "React.js Developer",
-    "MERN Stack Developer",
+    "Full Stack Developer (Frontend-Focused)",
   ];
   const [currentRole, setCurrentRole] = useState(0);
   const [displayText, setDisplayText] = useState("");
@@ -143,12 +143,11 @@ export default function Hero() {
 
         {/* Description */}
         <p className="text-[1.05rem] text-text-secondary max-w-[540px] mx-auto mb-10 leading-relaxed">
-          Frontend-focused Full Stack Developer specializing in React.js and
-          JavaScript, building responsive and scalable web applications.
-          Experienced in integrating REST APIs and developing real-world
-          applications including e-commerce platforms. Strong understanding of
-          backend technologies like Node.js, Prisma, and PostgreSQL to support
-          end-to-end development.
+          Full Stack Developer (Frontend-Focused) specializing in React.js and
+          JavaScript, building high-performance, responsive web applications.
+          Experienced in developing real-world products including e-commerce
+          platforms, with strong expertise in REST API integration and solid
+          backend knowledge using Node.js, Prisma, and PostgreSQL.
         </p>
 
         {/* CTAs */}

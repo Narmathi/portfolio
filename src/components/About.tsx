@@ -86,8 +86,8 @@ export default function About() {
               <strong className="text-text-primary font-semibold">
                 Narmathi
               </strong>
-              , a Frontend-focused Developer with 3+ years of experience
-              building responsive and scalable web applications.
+              , a Full Stack Developer with 3+ years of experience building
+              responsive and scalable web applications.
             </p>
 
             <p className="text-text-secondary text-[1.02rem] leading-relaxed">
