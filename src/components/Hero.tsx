@@ -38,9 +38,9 @@ function FloatingParticles() {
 
 function TypewriterRole() {
   const roles = [
-    "Frontend Developer",
-    "React.js Developer",
-    "Full Stack Developer (Frontend-Focused)",
+    "Full Stack Developer",
+    "React.js & Node.js Developer",
+    "Building Scalable Web Applications",
   ];
   const [currentRole, setCurrentRole] = useState(0);
   const [displayText, setDisplayText] = useState("");
@@ -143,11 +143,11 @@ export default function Hero() {
 
         {/* Description */}
         <p className="text-[1.05rem] text-text-secondary max-w-[540px] mx-auto mb-10 leading-relaxed">
-          Full Stack Developer (Frontend-Focused) specializing in React.js and
-          JavaScript, building high-performance, responsive web applications.
-          Experienced in developing real-world products including e-commerce
-          platforms, with strong expertise in REST API integration and solid
-          backend knowledge using Node.js, Prisma, and PostgreSQL.
+          Full Stack Developer specializing in React.js and Node.js, building
+          high-performance, responsive web applications. Experienced in
+          developing real-world products including e-commerce platforms, with
+          strong expertise in REST API development and backend systems using
+          Node.js, Prisma, and PostgreSQL.
         </p>
 
         {/* CTAs */}
