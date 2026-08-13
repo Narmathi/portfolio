@@ -149,7 +149,7 @@ const projects: Project[] = [
       "Developed a comprehensive web application for Louis Contino Landscaping, a US-based client project. The application allowed clients to browse landscape design services, view portfolio projects, and contact the company for consultations. Implemented a responsive design with modern UI elements and ensured seamless user experience across devices.",
     tech: ["JavaScript", "HTML", "CSS", "CodeIgniter 4", "MySQL", "REST APIs"],
     github: "#",
-    live: "https://smileaf.in/",
+    live: "https://louiscontinolandscaping.com/",
     svgIcon: (
       <svg
         viewBox="0 0 80 80"
