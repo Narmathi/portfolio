@@ -156,10 +156,10 @@ export default function Hero() {
 
         {/* Description */}
         <p className="text-[1.05rem] text-text-secondary max-w-[540px] mx-auto mb-10 leading-relaxed">
-          Full Stack Developer with 3.5 years of experience building scalable
-          and high-performance web applications using React.js, Next.js,
-          Node.js, and TypeScript. Experienced in developing end-to-end systems,
-          including frontend applications, REST APIs, backend services,
+          Full Stack Developer with around 4 years of experience building
+          scalable and high-performance web applications using React.js,
+          Next.js, Node.js, and TypeScript. Experienced in developing end-to-end
+          systems, including frontend applications, REST APIs, backend services,
           authentication, database management, and third-party integrations.
           Proven experience delivering production-grade applications including
           e-commerce platforms, CRM systems, and management solutions.
