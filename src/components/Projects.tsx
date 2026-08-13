@@ -36,15 +36,16 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Dating Application",
+    title: "CRM - Dating Application",
     label: "Next.js Frontend & API Integration",
     description:
-      "Developed a responsive and interactive dating application using Next.js and TypeScript. Implemented user-facing features including profile management, subscription plans, and content workflows with seamless REST API integration. Collaborated with backend services for authentication, payments, and data handling, ensuring a scalable and high-performance user experience across devices.",
+      "Developed a responsive and interactive dating application using Next.js and TypeScript, implementing user-facing features such as profile management, subscription plans, and content workflows. Worked with a microservices-based architecture, contributing to Operations Services and developing REST APIs consumed by the mobile application. Integrated backend services for authentication, payments, and data management, ensuring reliable communication between frontend, backend, and mobile clients. Focused on building scalable, maintainable, and high-performance features across web and mobile platforms.",
     tech: [
       "Next.js",
       "TypeScript",
       "REST APIs",
       "JWT",
+      "Casbin",
       "Node.js",
       "Prisma",
       "PostgreSQL",
@@ -95,20 +96,28 @@ const projects: Project[] = [
   {
     title: "E-Commerce Platform",
     label: "Bike Accessories Web Application",
+    // description:
+    //   "Developed a full-featured e-commerce platform for bike accessories using CodeIgniter 4, supporting real-world store operations. Built user-facing features such as product listing, advanced filtering, cart management, and checkout flow with Razorpay payment integration. Implemented OTP-based authentication using 2Factor for secure login. Designed admin functionalities for product and inventory management, ensuring efficient store handling and smooth user experience.",
     description:
-      "Developed a full-featured e-commerce platform for bike accessories using CodeIgniter 4, supporting real-world store operations. Built user-facing features such as product listing, advanced filtering, cart management, and checkout flow with Razorpay payment integration. Implemented OTP-based authentication using 2Factor for secure login. Designed admin functionalities for product and inventory management, ensuring efficient store handling and smooth user experience.",
+      "Developed a full-featured e-commerce platform for bike accessories using React.js, Node.js, and Express.js, supporting real-world store operations. Built responsive features including product listing, advanced filtering, cart management, and checkout flow with Razorpay payment integration. Implemented OTP-based authentication using 2Factor and developed REST APIs for secure and seamless frontend-backend communication. Designed admin functionalities for product and inventory management, ensuring efficient store operations and a smooth user experience.",
+
     tech: [
       "JavaScript",
       "HTML",
       "CSS",
-      "CodeIgniter 4",
-      "PHP",
+      // "CodeIgniter 4",
+      // "PHP",
+      "React.js",
+      "Node.js",
+      "Express.js",
       "MySQL",
       "Razorpay",
       "REST APIs",
       "OTP Authentication",
     ],
-    github: "https://github.com/Narmathii/adv_live",
+    github: "#",
+    // github: "https://github.com/Narmathii/adv_live",
+
     live: "https://adventureshoppe.com/",
     image: "/projects/bike-accessories.png",
 
@@ -132,6 +141,38 @@ const projects: Project[] = [
       </svg>
     ),
   },
+
+  {
+    title: "Louis Contino Landscaping — US-Based Client Project",
+    label: "Landscape Design Web Application",
+    description:
+      "Developed a comprehensive web application for Louis Contino Landscaping, a US-based client project. The application allowed clients to browse landscape design services, view portfolio projects, and contact the company for consultations. Implemented a responsive design with modern UI elements and ensured seamless user experience across devices.",
+    tech: ["JavaScript", "HTML", "CSS", "CodeIgniter 4", "MySQL", "REST APIs"],
+    github: "#",
+    live: "https://smileaf.in/",
+    svgIcon: (
+      <svg
+        viewBox="0 0 80 80"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        className="w-full h-full"
+      >
+        <rect x="8" y="12" width="64" height="56" rx="4" />
+        <rect x="8" y="12" width="18" height="56" rx="4" />
+        <line x1="32" y1="24" x2="64" y2="24" opacity="0.5" />
+        <rect x="32" y="30" width="14" height="14" rx="2" opacity="0.3" />
+        <rect x="50" y="30" width="14" height="14" rx="2" opacity="0.3" />
+        <rect x="32" y="48" width="14" height="14" rx="2" opacity="0.3" />
+        <rect x="50" y="48" width="14" height="14" rx="2" opacity="0.3" />
+        <line x1="14" y1="24" x2="20" y2="24" opacity="0.5" />
+        <line x1="14" y1="30" x2="20" y2="30" opacity="0.3" />
+        <line x1="14" y1="36" x2="20" y2="36" opacity="0.3" />
+      </svg>
+    ),
+    image: "/projects/louis.png",
+  },
+
   {
     title: "E-Commerce Platform",
     label: "Eco-Friendly Products Web Application",

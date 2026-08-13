@@ -65,8 +65,8 @@ export default function Navbar() {
           className="logo-animate font-mono text-lg font-semibold text-text-primary hover:text-accent-light transition-colors tracking-tight"
           aria-label="Home"
         >
-          <span className="text-accent">&lt; </span>Portfolio
-          <span className="text-accent-light"> | </span>Narmathi GP
+          <span className="text-accent">&lt; </span>Narmathi GP
+          <span className="text-accent-light"> | </span>FullStack Developer
           <span className="text-accent"> /&gt;</span>
         </a>
 

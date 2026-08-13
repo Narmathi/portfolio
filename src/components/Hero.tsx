@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useMemo } from "react";
+import { Download, Mail, ExternalLink } from "lucide-react";
 
 function FloatingParticles() {
   const particles = useMemo(() => {
@@ -40,7 +41,7 @@ function TypewriterRole() {
   const roles = [
     "Full Stack Developer",
     "React.js & Node.js Developer",
-    "Building Scalable Web Applications",
+    "Backend & REST API Developer",
   ];
   const [currentRole, setCurrentRole] = useState(0);
   const [displayText, setDisplayText] = useState("");
@@ -83,12 +84,24 @@ function TypewriterRole() {
 }
 
 export default function Hero() {
+  const [showResumeModal, setShowResumeModal] = useState(false);
+
+  const handleResumeDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/NarmathiGP_SoftwareDev_Resume.pdf";
+    link.download = "NarmathiGP_SoftwareDev_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    setShowResumeModal(false);
+  };
+
   return (
     <section
       id="hero"
       className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 pt-[120px] pb-20"
     >
-      {/* Dot grid background */}
       <div
         className="absolute inset-0"
         style={{
@@ -125,7 +138,7 @@ export default function Hero() {
       <div className="hero-animate text-center max-w-[700px] relative z-10">
         {/* Greeting */}
         <p className="text-base font-medium text-accent-light tracking-[2px] uppercase mb-3">
-          Hello, I&apos;m
+          Welcome, I&apos;m
         </p>
 
         {/* Name with gradient shimmer */}
@@ -143,28 +156,41 @@ export default function Hero() {
 
         {/* Description */}
         <p className="text-[1.05rem] text-text-secondary max-w-[540px] mx-auto mb-10 leading-relaxed">
-          Full Stack Developer specializing in React.js and Node.js, building
-          high-performance, responsive web applications. Experienced in
-          developing real-world products including e-commerce platforms, with
-          strong expertise in REST API development and backend systems using
-          Node.js, Prisma, and PostgreSQL.
+          Full Stack Developer with 3.5 years of experience building scalable
+          and high-performance web applications using React.js, Next.js,
+          Node.js, and TypeScript. Experienced in developing end-to-end systems,
+          including frontend applications, REST APIs, backend services,
+          authentication, database management, and third-party integrations.
+          Proven experience delivering production-grade applications including
+          e-commerce platforms, CRM systems, and management solutions.
         </p>
 
         {/* CTAs */}
+
         <div className="flex gap-4 justify-center flex-wrap">
           <a
             href="#projects"
-            id="viewWorkBtn"
-            className="inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold rounded-lg bg-accent text-white shadow-[0_4px_24px_var(--color-accent-glow)] hover:bg-accent-light hover:shadow-[0_6px_32px_var(--color-accent-glow)] hover:-translate-y-0.5 transition-all duration-200"
+            id="contactBtn"
+            className="inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold rounded-lg bg-transparent text-text-primary border-[1.5px] border-border-hover hover:border-accent hover:text-accent-light hover:bg-accent-subtle hover:-translate-y-0.5 transition-all duration-200 gap-2"
           >
+            <ExternalLink size={18} strokeWidth={2} />
             View My Work
           </a>
           <a
             href="#contact"
-            id="contactBtn"
-            className="inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold rounded-lg bg-transparent text-text-primary border-[1.5px] border-border-hover hover:border-accent hover:text-accent-light hover:bg-accent-subtle hover:-translate-y-0.5 transition-all duration-200"
+            id="viewWorkBtn"
+            className="inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold rounded-lg bg-accent text-white shadow-[0_4px_24px_var(--color-accent-glow)] hover:bg-accent-light hover:shadow-[0_6px_32px_var(--color-accent-glow)] hover:-translate-y-0.5 transition-all duration-200 gap-2"
           >
+            <Mail size={18} strokeWidth={2} />
             Get in Touch
+          </a>
+          <a
+            id="contactBtn"
+            onClick={() => setShowResumeModal(true)}
+            className="inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold rounded-lg bg-transparent text-text-primary border-[1.5px] border-border-hover hover:border-accent hover:text-accent-light hover:bg-accent-subtle hover:-translate-y-0.5 transition-all duration-200 gap-2"
+          >
+            <Download size={18} strokeWidth={2} />
+            Download Resume
           </a>
         </div>
 
@@ -180,6 +206,59 @@ export default function Hero() {
           />
         </div>
       </div>
+
+      {showResumeModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center px-4">
+          {/* Backdrop */}
+          <div
+            className="absolute inset-0 bg-black/70 backdrop-blur-sm"
+            onClick={() => setShowResumeModal(false)}
+          />
+
+          {/* Modal */}
+          <div className="relative w-full max-w-md rounded-2xl border border-purple-500/20 bg-[#0b0b14] p-7 shadow-[0_0_60px_rgba(139,92,246,0.18)]">
+            <div className="flex flex-col items-center text-center">
+              {/* Icon */}
+              <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-purple-500/10 border border-purple-500/20">
+                <Download
+                  size={25}
+                  className="text-purple-400"
+                  strokeWidth={2}
+                />
+              </div>
+
+              {/* Title */}
+              <h2 className="text-xl font-semibold text-white">
+                Download Resume
+              </h2>
+
+              {/* Description */}
+              <p className="mt-3 text-sm leading-6 text-gray-400">
+                Would you like to download Narmathi GP&apos;s resume?
+              </p>
+
+              {/* Buttons */}
+              <div className="mt-7 flex w-full gap-3">
+                <button
+                  type="button"
+                  onClick={() => setShowResumeModal(false)}
+                  className="flex-1 rounded-lg border border-gray-700 px-5 py-3 text-sm font-semibold text-gray-300 transition-all duration-200 hover:border-purple-500/40 hover:text-white"
+                >
+                  Cancel
+                </button>
+
+                <button
+                  type="button"
+                  onClick={handleResumeDownload}
+                  className="flex-1 rounded-lg bg-gradient-to-r from-purple-500 to-violet-600 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-purple-500/20 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-purple-500/30"
+                >
+                  Download Resume
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

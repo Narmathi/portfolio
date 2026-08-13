@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { FaExchangeAlt, FaMobileAlt, FaTachometerAlt } from "react-icons/fa";
+import { Plug, Gauge, MonitorSmartphone } from "lucide-react";
 
 const frontendSkills = [
   { name: "HTML5", icon: "devicon-html5-plain colored" },
@@ -10,14 +11,27 @@ const frontendSkills = [
   { name: "TypeScript", icon: "devicon-typescript-plain colored" },
   { name: "React", icon: "devicon-react-original colored" },
   { name: "Next.js", icon: "devicon-nextjs-plain" },
-  { name: "REST API Integration", icon: <FaExchangeAlt /> },
-  { name: "Responsive Design", icon: <FaMobileAlt /> },
-  { name: "Performance Optimization", icon: <FaTachometerAlt /> },
+  {
+    name: "REST API Integration",
+    icon: <Plug />,
+  },
+  {
+    name: "Performance Optimization",
+    icon: <Gauge size={24} />,
+  },
+  {
+    name: "Responsive Design",
+    icon: <MonitorSmartphone size={24} />,
+  },
 ];
 
 const backendSkills = [
   { name: "Node.js", icon: "devicon-nodejs-plain colored" },
-
+  {
+    name: "Express",
+    icon: "devicon-express-original",
+    svg: "",
+  },
   {
     name: "Fastify",
     icon: null,
@@ -41,7 +55,7 @@ const cloudSkills = [
   { name: "Docker", icon: "devicon-docker-plain colored" },
 
   { name: "AWS (EC2 , S3)", icon: "devicon-amazonwebservices-plain colored" },
-  { name: "GCP (Basics)", icon: "devicon-googlecloud-plain colored" },
+  { name: "GCP", icon: "devicon-googlecloud-plain colored" },
 ];
 
 const toolsSkills = [

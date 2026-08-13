@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 const stats = [
   { target: 10, label: "Projects Built" },
-  { target: 3, label: "Years Experience" },
+  { target: 3.5, label: "Years Experience" },
   { target: 2, label: "E-commerce" },
   { target: 1, label: "Microservices" },
 ];
@@ -86,8 +86,8 @@ export default function About() {
               <strong className="text-text-primary font-semibold">
                 Narmathi
               </strong>
-              , a Full Stack Developer with 3+ years of experience building
-              responsive and scalable web applications.
+              , a Full Stack Developer with around 4 years of experience
+              building responsive and scalable web applications.
             </p>
 
             <p className="text-text-secondary text-[1.02rem] leading-relaxed">

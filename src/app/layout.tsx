@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Portfolio | Narmathi GP",
+  title: "Narmathi GP | Full Stack Developer",
   description:
-    "Portfolio of Narmathi GP, a Frontend-focused Developer skilled in React.js, JavaScript, and Node.js.",
+    "Portfolio of Narmathi GP, a Full Stack Developer skilled in JavaScript, React.js, Next.js and Node.js.",
   keywords: [
-    "Frontend Developer",
+    "Full Stack Developer",
     "React.js",
     "JavaScript",
     "MERN Stack",

@@ -17,6 +17,10 @@ const experiences = [
       "PostgreSQL",
       "REST APIs",
       "Prisma ORM",
+      "Fastify",
+      "Docker",
+      "AWS S3",
+      "Microservices",
     ],
   },
   {
@@ -25,7 +29,17 @@ const experiences = [
     date: "Feb 2023 — Feb 2024",
     description:
       "Developed responsive web interfaces using HTML, CSS, JavaScript Focused on improving user experience, creating reusable UI components, and ensuring cross-device compatibility. Collaborated on frontend features and optimized UI performance.",
-    tags: ["HTML", "CSS", "JavaScript", "Responsive Design"],
+    tags: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Responsive Design",
+      "Git",
+      "UI/UX Design",
+      "MySQL",
+      "Bootstrap",
+      "REST APIs",
+    ],
   },
 ];
 function ExpCard({
