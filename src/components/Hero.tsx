@@ -163,6 +163,7 @@ export default function Hero() {
           authentication, database management, and third-party integrations.
           Proven experience delivering production-grade applications including
           e-commerce platforms, CRM systems, and management solutions
+          
         </p>
 
         {/* CTAs */}
